@@ -1,0 +1,6 @@
+apiVersion: container/v1
+kind: StepContainer
+inherit: ../hack/defs/aws-python
+title: Put AWS S3 bucket ACLs
+description: >
+  This step container changes a list of AWS S3 buckets ACLs to a provided canned ACL.

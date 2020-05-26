@@ -13,10 +13,10 @@ RUN set -eux ; \
     rm -fr /tmp/ni
 RUN apk --no-cache add bash ca-certificates curl git jq openssh && update-ca-certificates
 RUN ["/bin/bash", "-c", "pip install awscli"]
-COPY "./step.sh" "/nebula/step-s3-uploader.sh"
+COPY "./step.sh" "/nebula/step-s3-upload-content.sh"
 ENTRYPOINT []
-CMD ["/bin/bash", "/nebula/step-s3-uploader.sh"]
+CMD ["/bin/bash", "/nebula/step-s3-upload-content.sh"]
 
-LABEL "org.opencontainers.image.title"="AWS S3 uploader"
-LABEL "org.opencontainers.image.description"="The AWS S3 uploader task uploads a single file, directory, or inline content to an S3 bucket."
+LABEL "org.opencontainers.image.title"="Upload content to AWS S3 bucket"
+LABEL "org.opencontainers.image.description"="This task uploads a single file, directory, or inline content to an S3 bucket."
 LABEL "com.puppet.nebula.sdk.version"="v1"

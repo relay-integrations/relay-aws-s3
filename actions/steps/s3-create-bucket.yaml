@@ -7,11 +7,11 @@ kind: Step
 
 # The name of the action. Required. Must be exactly the name of the directory
 # containing the action.
-name: s3-uploader
+name: s3-create-bucket
 
 # The version of the action. Required. Must be an integer. If specified in the
 # directory name, must be exactly the version in the directory name.
-version: 3
+version: 1
 
 # High-level phrase describing what this action does. Required.
 summary: 
