@@ -1,0 +1,6 @@
+apiVersion: container/v1
+kind: StepContainer
+inherit: ../hack/defs/aws-python
+title: Create AWS S3 bucket
+description: >
+  This task creates an AWS S3 bucket.

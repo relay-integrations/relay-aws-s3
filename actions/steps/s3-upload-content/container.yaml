@@ -1,7 +1,7 @@
 apiVersion: container/v1
 kind: StepContainer
 inherit: ../hack/defs/aws
-title: AWS S3 uploader
+title: Upload content to AWS S3 bucket
 description: >
-  The AWS S3 uploader task uploads a single file, directory, or inline content
+  This task uploads a single file, directory, or inline content
   to an S3 bucket.
