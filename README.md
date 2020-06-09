@@ -2,17 +2,20 @@
 
 Integration with Amazon Web Services Simple Storage Service for Puppet Relay.
 
-## External requirements
+## Actions
 
-_TBD_
+The following are supported actions: 
 
-## Getting started
+|   Type    |  Name              |
+|-----------|--------------------|
+| Step      | [s3-create-bucket](/actions/steps/s3-create-bucket)  | 
+| Step      | [s3-get-bucket-acls](/actions/steps/s3-get-bucket-acls)  | 
+| Step      | [s3-get-bucket-encryption](/actions/steps/s3-get-bucket-encryption)  | 
+| Step      | [s3-list-buckets](/actions/steps/s3-list-buckets)  | 
+| Step      | [s3-put-bucket-acls](/actions/steps/s3-put-bucket-acls)  | 
+| Step      | [s3-put-bucket-encryption](/actions/steps/s3-put-bucket-encryption)  | 
+| Step      | [s3-upload-content](/actions/steps/s3-upload-content)  | 
 
-_TBD_
-
-## Examples
-
-_TBD_
 
 ## Contributing
 
