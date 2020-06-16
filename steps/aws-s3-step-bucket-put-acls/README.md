@@ -1,7 +1,11 @@
-# s3-put-bucket-encryption
+# aws-s3-step-bucket-put-acls
 
-This [AWS S3](https://aws.amazon.com/s3/) step container enables default encryption
-on a list of AWS S3 buckets. Currently, default encryption is the only supported option.
+This [AWS S3](https://aws.amazon.com/s3/) step container changes a list of AWS S3 buckets 
+ACLs to a provided canned ACL. The following ACLs can be specified: 
+- `private`
+- `public-read`
+- `public-read-write`
+- `authenticated-read`
 
 ## Specification
 
@@ -10,6 +14,7 @@ on a list of AWS S3 buckets. Currently, default encryption is the only supported
 | `aws` || mapping | A mapping of AWS account configuration. | None | True |
 || `connection` | AWS Connection | Relay Connection for the AWS account. Use the Connection sidebar to configure the AWS Connection | None | True |
 | `buckets` || array of bucket names | List of S3 bucket names to modify the ACL | None | True | 
+| `acl` || string | One of `private`, `public-read`, `public-read-write`, `authenticated-read` | None | True |
 
 
 ## Example
@@ -17,12 +22,13 @@ on a list of AWS S3 buckets. Currently, default encryption is the only supported
 ```yaml
 steps:
 # ...
-- name: s3-put-bucket-encryption
-  image: projectnebula/s3-put-bucket-encryption
+- name: s3-put-bucket-acls
+  image: relaysh/aws-s3-step-bucket-put-acls
   spec:
     aws:
       connection: !Connection { type: aws, name: my-aws-account } 
     buckets:
     - bucket-1-us-east-1
     - bucket-2-us-east-2
+    acl: private 
 ```

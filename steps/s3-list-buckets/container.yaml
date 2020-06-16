@@ -1,6 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-inherit: ../hack/defs/aws-python
-title: List AWS S3 buckets
-description: >
-  This task lists the S3 buckets in a given account and region.

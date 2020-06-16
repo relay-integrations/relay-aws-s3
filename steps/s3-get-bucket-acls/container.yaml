@@ -1,6 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-inherit: ../hack/defs/aws-python
-title: Get AWS S3 bucket ACLs
-description: >
-  This task lists all AWS S3 buckets ACL grants given a list of bucket names.

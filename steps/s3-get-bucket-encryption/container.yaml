@@ -1,6 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-inherit: ../hack/defs/aws-python
-title: Get AWS S3 bucket encryption
-description: >
-  This task lists all AWS S3 buckets encryption settings given a list of bucket names.

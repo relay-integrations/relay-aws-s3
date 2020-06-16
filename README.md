@@ -8,13 +8,13 @@ The following are supported actions:
 
 |   Type    |  Name              |
 |-----------|--------------------|
-| Step      | [s3-create-bucket](/steps/s3-create-bucket)  | 
-| Step      | [s3-get-bucket-acls](/steps/s3-get-bucket-acls)  | 
-| Step      | [s3-get-bucket-encryption](/steps/s3-get-bucket-encryption)  | 
-| Step      | [s3-list-buckets](/steps/s3-list-buckets)  | 
-| Step      | [s3-put-bucket-acls](/steps/s3-put-bucket-acls)  | 
-| Step      | [s3-put-bucket-encryption](/steps/s3-put-bucket-encryption)  | 
-| Step      | [s3-upload-content](/steps/s3-upload-content)  | 
+| Step      | [aws-s3-step-bucket-create](/steps/aws-s3-step-bucket-create)  | 
+| Step      | [aws-s3-step-bucket-get-acls](/steps/aws-s3-step-bucket-get-acls)  | 
+| Step      | [aws-s3-step-bucket-get-encryption](/steps/aws-s3-step-bucket-get-encryption)  | 
+| Step      | [aws-s3-step-bucket-list](/steps/aws-s3-step-bucket-list)  | 
+| Step      | [aws-s3-step-bucket-put-acls](/steps/aws-s3-step-bucket-put-acls)  | 
+| Step      | [aws-s3-step-bucket-put-encryption](/steps/aws-s3-step-bucket-put-encryption)  | 
+| Step      | [aws-s3-step-bucket-upload-content](/steps/aws-s3-step-bucket-upload-content)  | 
 
 
 ## Contributing

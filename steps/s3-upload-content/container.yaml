@@ -1,7 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-inherit: ../hack/defs/aws
-title: Upload content to AWS S3 bucket
-description: >
-  This task uploads a single file, directory, or inline content
-  to an S3 bucket.
