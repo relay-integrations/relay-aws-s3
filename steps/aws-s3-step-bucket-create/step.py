@@ -23,10 +23,16 @@ region = relay.get(D.aws.region)
 bucketName = relay.get(D.name)
 
 try:
-  response = s3.create_bucket(
-      Bucket=bucketName,
-      CreateBucketConfiguration={ 'LocationConstraint': region }
-  )
+  # Workaround for https://github.com/boto/boto3/issues/125
+  if region == 'us-east-1':
+    response = s3.create_bucket(
+        Bucket=bucketName
+    )
+  else:
+    response = s3.create_bucket(
+        Bucket=bucketName,
+        CreateBucketConfiguration={ 'LocationConstraint': region }
+    )
   print ("Created bucket {}".format(bucketName))
 except Exception as e: 
   print (e)
