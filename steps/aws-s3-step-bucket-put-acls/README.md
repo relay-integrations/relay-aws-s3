@@ -7,6 +7,8 @@ ACLs to a provided canned ACL. The following ACLs can be specified:
 - `public-read-write`
 - `authenticated-read`
 
+For more information on setting S3 bucket ACLs, check out the [AWS API documentation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAcl.html) here.  
+
 ## Specification
 
 | Setting | Child setting | Data type | Description | Default | Required |
