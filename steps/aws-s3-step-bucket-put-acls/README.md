@@ -1,7 +1,7 @@
 # aws-s3-step-bucket-put-acls
 
 This [AWS S3](https://aws.amazon.com/s3/) step container changes a list of AWS S3 buckets 
-ACLs to a provided canned ACL. The following ACLs can be specified: 
+ACLs to a provided [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl). The following ACLs can be specified: 
 - `private`
 - `public-read`
 - `public-read-write`
