@@ -26,7 +26,7 @@ summary: Amazon Web Services Simple Storage Service
 
 # A paragraph or two describing what this integration does. Optional. Markdown.
 description: |
-    Integration with Amazon Web Services' S3 service.
+    Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
 
 # License information. Optional. If not specified, this integration is assumed
 # to be unlicensed proprietary code. Otherwise, must be a valid SPDX License
@@ -46,3 +46,6 @@ homepage: https://github.com/relay-integrations/relay-aws-s3
 # URL to this integration's source code. Optional. If the homepage is a GitHub
 # link, may be inferred automatically.
 source: git://github.com/relay-integrations/relay-aws-s3.git
+
+tags:
+  - aws
