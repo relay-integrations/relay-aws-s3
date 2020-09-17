@@ -43,7 +43,7 @@
       },
       "description": "List of S3 bucket to apply encryption to"
     },
-    "acls": {
+    "acl": {
       "type": "string",
       "description": "One of private, public-read, public-read-write, authenticated-read"
     }
@@ -51,7 +51,7 @@
   "required": [
     "aws",
     "buckets",
-    "acls"
+    "acl"
   ],
   "additionalProperties": false
 }
