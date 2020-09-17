@@ -18,8 +18,7 @@ summary: Get encryption
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: |
-
+description: This AWS S3 step gets the encryption configuration of the provided S3 buckets
 
 # URL or path relative to this file to an icon or icons representing this
 # action. Optional. Defaults to the integration icon.
@@ -38,3 +37,11 @@ build:
 
 publish:
   repository: relaysh/aws-s3-step-bucket-get-encryption
+
+schemas:
+  spec:
+    source: file
+    file: spec.schema.json
+  output:
+    source: file
+    file: output.schema.json

@@ -18,7 +18,7 @@ summary: Create
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: |
+description: "This AWS S3 step allows you to create an S3 bucket"
 
 
 # URL or path relative to this file to an icon or icons representing this
@@ -38,3 +38,8 @@ build:
 
 publish:
   repository: relaysh/aws-s3-step-bucket-create
+
+schemas:
+  spec: 
+    source: file
+    file: spec.schema.json

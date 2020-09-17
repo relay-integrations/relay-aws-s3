@@ -1,0 +1,153 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "aws": {
+      "type": "object",
+      "description": "A mapping of AWS account configuration.",
+      "properties": {
+        "connection": {
+          "type": "object",
+          "x-relay-connectionType": "aws",
+          "description": "A Relay AWS connection to use",
+          "properties": {
+            "accessKeyID": {
+              "type": "string",
+              "description": "Access Key ID"
+            },
+            "secretAccessKey": {
+              "type": "string",
+              "description": "Secret Access Key"
+            }
+          },
+          "required": [
+            "accessKeyID", 
+            "secretAccessKey"
+          ]
+        },
+        "region": {
+          "type": "string",
+          "description": "The AWS region to use (for example, us-west-2)"
+        }
+      },
+      "required": [
+        "connection",
+        "region"
+      ]
+    },
+    "bucket": {
+      "type": "string",
+      "description": "The name of the target S3 bucket"
+    },
+    "key": {
+      "type": "string",
+      "description": "Specify a key name for the object."
+    },
+    "sourcePath": {
+      "type": "string",
+      "description": "The relative path, within the Git repository given in the git parameters, to upload. One of sourcePath or sourceContent must be specified."
+    },
+    "sourceContent": {
+      "type": "string",
+      "description": "The data to upload as a string."
+    },
+    "git": {
+      "type": "object",
+      "description": "A map of git configuration. If you're using HTTPS, only name and repository are required.",
+      "properties": {
+        "ssh_key": {
+          "type": "string",
+          "description": "The SSH key to use when cloning the git repository. You can pass the key to Relay as a secret. See the example below."
+        },
+        "known_hosts": {
+          "type": "string",
+          "description": "SSH known hosts file. Use a Relay secret to pass the contents of the file into the workflow as a base64-encoded string. See the example below."
+        },
+        "name": {
+          "type": "string",
+          "description": "A directory name for the git clone."
+        },
+        "branch": {
+          "type": "string",
+          "description": "The Git branch to clone.",
+          "default": "master"
+        },
+        "repository": {
+          "type": "string",
+          "description": "The git repository URL."
+        }
+      },
+      "required": [
+        "ssh_key",
+        "name",
+        "repository"
+      ]
+    },
+    "filters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "The type of the filter, one of include or exclude."
+          },
+          "pattern": {
+            "type": "string",
+            "description": "The pattern for the filter. See the S3 CLI documentation for details on the syntax."
+          }
+        },
+        "required": [
+          "type",
+          "pattern"
+        ]
+      },
+      "description": "A YAML sequence (array) of path filters, applied in order."
+    },
+    "acl": {
+      "type": "string",
+      "description": "The canned ACL to use for the uploaded objects. For a list of canned ACLs, see Access Control List (ACL) Overview"
+    },
+    "storageClass": {
+      "type": "string",
+      "description": "The storage class to use for the uploaded objects. For informaton on storage classes, see Amazon S3 Storage Classes"
+    },
+    "contentType": {
+      "type": "string",
+      "description": "The media type of the uploaded object. Automatically detected when using sourcePath if possible."
+    },
+    "cacheControl": {
+      "type": "string",
+      "description": "The value of the HTTP Cache-Control header to associate with the uploaded objects."
+    },
+    "contentDisposition": {
+      "type": "string",
+      "description": "The value of the HTTP Content-Disposition header to associate with the uploaded objects."
+    },
+    "contentEncoding": {
+      "type": "string",
+      "description": "The value of the HTTP Content-Encoding header to associate with the uploaded objects."
+    },
+    "contentLanguage": {
+      "type": "string",
+      "description": "The value of the HTTP Content-Language header to associate with the uploaded objects."
+    },
+    "expires": {
+      "type": "string",
+      "description": "The time at which the uploaded object is no longer cacheable, in ISO 8601 format."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "A YAML mapping of arbitrary key-value data to store with the uploaded objects.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "aws",
+    "bucket"
+  ],
+  "additionalProperties": false
+}

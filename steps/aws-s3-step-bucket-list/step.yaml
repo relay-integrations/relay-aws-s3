@@ -18,7 +18,7 @@ summary: List
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: |
+description: "This AWS S3 step allows you to list S3 buckets"
 
 
 # URL or path relative to this file to an icon or icons representing this
@@ -38,3 +38,11 @@ build:
 
 publish:
   repository: relaysh/aws-s3-step-bucket-list
+
+schemas: 
+  spec: 
+    source: file
+    file: spec.schema.json
+  output:
+    source: file
+    file: output.schema.json

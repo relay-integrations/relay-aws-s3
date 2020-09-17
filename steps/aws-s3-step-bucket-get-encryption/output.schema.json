@@ -1,0 +1,15 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "encryptionConfigurations": {
+      "type": "object",
+      "description": "Dictionary of S3 bucket names and their encryption configurations."
+    }
+  },
+  "required": [
+    "encryptionConfigurations"
+  ],
+  "additionalProperties": false
+}
