@@ -14,7 +14,7 @@ name: aws-s3-step-bucket-get-acls
 version: 1
 
 # High-level phrase describing what this action does. Required.
-summary: Get ACLS
+summary: Get ACLs
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
@@ -43,6 +43,6 @@ schemas:
   spec: 
     source: file
     file: spec.schema.json
-  output: 
+  outputs: 
     source: file
-    file: output.schema.json
+    file: outputs.schema.json
