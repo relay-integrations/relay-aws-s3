@@ -14,7 +14,7 @@ name: aws-s3-step-bucket-put-acls
 version: 1
 
 # High-level phrase describing what this action does. Required.
-summary: Put ACLS
+summary: Update ACLs
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.

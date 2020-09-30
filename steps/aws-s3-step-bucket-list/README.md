@@ -15,15 +15,3 @@ steps:
     aws:
       connection: !Connection { type: aws, name: my-aws-account } 
 ```
-
-## Output Example
-Example output of `buckets`
-```
-[
-  'bucket-1-us-east-1',
-  'bucket-2-us-east-1',
-  'bucket-3-us-west-2',
-  'bucket-4-us-west-2',
-  'bucket-5-us-east-2',
-]
- 
