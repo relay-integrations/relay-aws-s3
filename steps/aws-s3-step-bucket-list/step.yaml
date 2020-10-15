@@ -46,3 +46,14 @@ schemas:
   outputs:
     source: file
     file: outputs.schema.json
+
+examples: 
+  - summary: "Get a list of AWS S3 buckets"
+    content:
+      apiVersion: 1
+      kind: Step
+      name: s3-list-buckets
+      image: relaysh/aws-s3-step-bucket-list
+      spec:
+        aws:
+          connection: !Connection { type: aws, name: my-aws-account } 

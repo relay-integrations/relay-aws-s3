@@ -43,3 +43,17 @@ schemas:
   spec: 
     source: file
     file: spec.schema.json
+
+examples: 
+  - summary: "Update the ACLs of a single AWS bucket"
+    content:
+      apiVersion: 1
+      kind: Step
+      name: s3-put-bucket-acls
+      image: relaysh/aws-s3-step-bucket-put-acls
+      spec:
+        aws:
+          connection: !Connection { type: aws, name: my-aws-account } 
+        buckets:
+        - !Parameter bucketName
+        acl: !Parameter acl
