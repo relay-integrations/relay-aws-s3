@@ -50,7 +50,7 @@ schemas:
 examples: 
   - summary: Get the ACLs of a single AWS bucket
     content: 
-      apiVersion: 1
+      apiVersion: v1
       kind: Step
       name: s3-get-bucket-acls
       image: relaysh/aws-s3-step-bucket-get-acls
