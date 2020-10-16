@@ -43,3 +43,22 @@ schemas:
   spec: 
     source: file
     file: spec.schema.json 
+
+examples: 
+  - summary: Upload content to an AWS S3 bucket
+    content: 
+      apiVersion: v1
+      kind: Step
+      name: s3-uploader
+      image: relaysh/aws-s3-step-bucket-upload-content
+      spec:
+        aws:
+          connection: !Connection { type: aws, name: my-aws-account } 
+          region: !Parameter awsRegion
+        bucket: !Parameter bucketName
+        sourcePath: !Parameter githubSourcePath
+        git: 
+          ssh_key: !Secret ssh-key
+          name: branch
+          branch: !Parameter gitBranch
+          repository: !Parameter gitRepository

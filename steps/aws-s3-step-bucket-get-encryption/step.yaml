@@ -45,3 +45,16 @@ schemas:
   outputs:
     source: file
     file: outputs.schema.json
+
+examples: 
+  - summary: Get the encryption of a single AWS bucket
+    content: 
+      apiVersion: v1
+      kind: Step
+      name: s3-get-bucket-encryption
+      image: relaysh/aws-s3-step-bucket-get-encryption
+      spec:
+        aws:
+          connection: !Connection { type: aws, name: my-aws-account } 
+        buckets:
+        - !Parameter bucketName
