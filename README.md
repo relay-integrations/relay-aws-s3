@@ -9,6 +9,7 @@ The following are supported actions:
 |   Type    |  Name              |
 |-----------|--------------------|
 | Step      | [aws-s3-step-bucket-create](/steps/aws-s3-step-bucket-create)  | 
+| Step      | [aws-s3-step-bucket-delete](/steps/aws-s3-step-bucket-delete)  | 
 | Step      | [aws-s3-step-bucket-get-acls](/steps/aws-s3-step-bucket-get-acls)  | 
 | Step      | [aws-s3-step-bucket-get-encryption](/steps/aws-s3-step-bucket-get-encryption)  | 
 | Step      | [aws-s3-step-bucket-list](/steps/aws-s3-step-bucket-list)  | 
