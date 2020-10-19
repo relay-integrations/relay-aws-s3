@@ -14,7 +14,7 @@ name: aws-s3-step-bucket-delete
 version: 1
 
 # High-level phrase describing what this action does. Required.
-summary: Delete bucket
+summary: Delete S3 bucket
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
