@@ -1,6 +1,6 @@
-# Amazon Web Services Simple Storage Service integration
+# AWS Simple Storage Service integration
 
-Integration with Amazon Web Services Simple Storage Service for Puppet Relay.
+Integration with AWS Simple Storage Service for Puppet Relay.
 
 ## Actions
 
