@@ -26,7 +26,7 @@ summary: AWS S3
 
 # A paragraph or two describing what this integration does. Optional. Markdown.
 description: |
-    Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
+    AWS Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
 
 # License information. Optional. If not specified, this integration is assumed
 # to be unlicensed proprietary code. Otherwise, must be a valid SPDX License
