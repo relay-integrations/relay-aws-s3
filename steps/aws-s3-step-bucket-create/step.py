@@ -2,7 +2,7 @@
 from functools import partial
 
 import boto3
-from nebula_sdk import Interface, Dynamic as D
+from relay_sdk import Interface, Dynamic as D
 
 relay = Interface()
 
