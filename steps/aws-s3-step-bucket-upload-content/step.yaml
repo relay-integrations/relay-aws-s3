@@ -18,7 +18,7 @@ summary: Upload content
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: This AWS S3 step allows you to upload content to an S3 bucket
+description: Uploads content to an AWS S3 bucket.
 
 
 # URL or path relative to this file to an icon or icons representing this
