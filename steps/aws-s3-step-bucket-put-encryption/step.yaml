@@ -18,7 +18,7 @@ summary: Update encryption
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: This AWS S3 step allows apply encryption on a list of S3 buckets
+description: Apply encryption settings on a list of AWS S3 buckets.
 
 
 # URL or path relative to this file to an icon or icons representing this

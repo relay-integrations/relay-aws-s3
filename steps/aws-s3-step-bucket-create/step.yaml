@@ -18,7 +18,7 @@ summary: Create S3 bucket
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: "This AWS S3 step allows you to create an S3 bucket"
+description: "Creates an AWS S3 bucket."
 
 
 # URL or path relative to this file to an icon or icons representing this

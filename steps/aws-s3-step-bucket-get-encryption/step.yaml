@@ -18,7 +18,7 @@ summary: Get encryption settings
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: This AWS S3 step gets the encryption configuration of the provided S3 buckets
+description: List the encryption configuration of the provided AWS S3 buckets.
 
 # URL or path relative to this file to an icon or icons representing this
 # action. Optional. Defaults to the integration icon.

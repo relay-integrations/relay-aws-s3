@@ -18,7 +18,7 @@ summary: Get ACLs
 
 # Single-paragraph explanation of what this action does in more detail.
 # Optional. Markdown.
-description: "This AWS S3 step allows you to get the ACLs of the S3 buckets provided."
+description: "List the ACLs of the provided AWS S3 buckets."
 
 
 # URL or path relative to this file to an icon or icons representing this
